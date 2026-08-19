@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strategic Soil & Footprint Mapper</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <div class="brand">Strategic Soil & Footprint Mapper<small>In‑Service · Base Operations Simulator</small></div>
+    <div class="stepper" id="stepper"></div>
+    <div class="navbuttons">
+      <button class="iconbtn" id="btnBack" title="Back" aria-label="Back">←</button>
+      <button class="btn ghost" id="btnHome" title="Home">⌂ <span class="homeLabel">Home</span></button>
+    </div>
+  </header>
+  <main id="app"></main>
+  <div class="footerNote">Training simulation · No operational or site-specific instruction · Built for environmental learning and decision practice.</div>
+</div>
+
+<div class="avatarWrap" id="avatarWrap">
+  <div class="avatarCard">
+    <div class="avatarHead">
+      <div class="avatar" aria-hidden="true"><img src="assets/nora-avatar.jpg" alt="" /></div>
+      <div class="avatarMeta"><strong>Nora</strong><span>Base Environmental Planner</span></div>
+      <div class="avatarTools"><button class="miniBtn" id="speakBtn" title="Read tip aloud">🔊</button><button class="miniBtn" id="minBtn" title="Minimise assistant">—</button></div>
+    </div>
+    <div class="avatarBody"><p id="avatarText">Welcome. I’ll explain the objective on every screen and tell you exactly what unlocks the next step.</p></div>
+  </div>
+  <button class="avatarMin" id="restoreBtn" title="Restore assistant">👷</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
