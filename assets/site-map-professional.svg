@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">Professional tactical base site map</title>
+<desc id="desc">Top-down planning map with Hangar 2, Hangar 4, existing apron, service gate, drainage corridor and habitat edge.</desc>
+<defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c7b49a"/><stop offset=".5" stop-color="#b6a187"/><stop offset="1" stop-color="#95846f"/></linearGradient>
+  <linearGradient id="concrete" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8f969a"/><stop offset="1" stop-color="#676f75"/></linearGradient>
+  <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e3e7e8"/><stop offset=".65" stop-color="#bbc2c6"/><stop offset="1" stop-color="#929ca2"/></linearGradient>
+  <linearGradient id="water" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#126aa0"/><stop offset=".5" stop-color="#50b7e2"/><stop offset="1" stop-color="#177aad"/></linearGradient>
+  <linearGradient id="habitat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#42684b"/><stop offset="1" stop-color="#263f30"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#07111c" flood-opacity=".45"/></filter>
+  <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#edf3f5" stroke-opacity=".12" stroke-width="1"/></pattern>
+  <pattern id="slab" width="110" height="85" patternUnits="userSpaceOnUse"><path d="M110 0H0V85" fill="none" stroke="#e9eef0" stroke-opacity=".18" stroke-width="2"/><circle cx="10" cy="10" r="2" fill="#313a40" opacity=".28"/></pattern>
+  <pattern id="hatch" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(32)"><rect width="26" height="26" fill="transparent"/><rect width="7" height="26" fill="#79b27e" opacity=".22"/></pattern>
+  <pattern id="grass" width="44" height="44" patternUnits="userSpaceOnUse"><circle cx="8" cy="11" r="3" fill="#84a86f" opacity=".42"/><circle cx="31" cy="19" r="4" fill="#517653" opacity=".35"/><circle cx="19" cy="36" r="2" fill="#9cba83" opacity=".35"/></pattern>
+</defs>
+<!-- outer frame -->
+<rect x="8" y="8" width="1184" height="884" rx="34" fill="#071522" stroke="#688299" stroke-width="3"/>
+<rect x="30" y="30" width="1140" height="840" rx="24" fill="url(#ground)"/>
+<rect x="30" y="30" width="1140" height="840" rx="24" fill="url(#grid)" opacity=".5"/>
+<!-- west service road -->
+<path d="M42 120 L177 120 L200 175 L190 830 L42 830Z" fill="#747d82" stroke="#3e484e" stroke-width="5"/>
+<path d="M95 145 L95 805" stroke="#f1c94a" stroke-width="8" stroke-dasharray="42 26" opacity=".9"/>
+<path d="M155 148 L155 805" stroke="#f4df85" stroke-width="3" stroke-dasharray="15 18" opacity=".5"/>
+<!-- taxi/service network -->
+<path d="M175 212 C290 245 355 255 470 245 S735 200 865 215 S1050 280 1148 270" fill="none" stroke="#6d7478" stroke-width="92" opacity=".86"/>
+<path d="M175 212 C290 245 355 255 470 245 S735 200 865 215 S1050 280 1148 270" fill="none" stroke="#f3c744" stroke-width="7" opacity=".92"/>
+<path d="M170 570 C330 500 520 510 690 555 S1010 655 1150 620" fill="none" stroke="#777e82" stroke-width="76" opacity=".72"/>
+<path d="M170 570 C330 500 520 510 690 555 S1010 655 1150 620" fill="none" stroke="#f3c744" stroke-width="6" stroke-dasharray="36 20" opacity=".82"/>
+<!-- existing apron -->
+<g filter="url(#shadow)">
+ <path d="M198 446 Q198 404 240 404 H685 Q724 404 724 445 V724 Q724 762 686 762 H238 Q198 762 198 722Z" fill="url(#concrete)" stroke="#c4d0d6" stroke-width="5"/>
+ <path d="M218 425 H705 V742 H218Z" fill="url(#slab)" opacity=".72"/>
+ <path d="M262 468 H650" stroke="#e5e9ea" stroke-width="4" stroke-dasharray="24 20" opacity=".5"/>
+ <path d="M262 692 H650" stroke="#f2d766" stroke-width="5" stroke-dasharray="42 20" opacity=".82"/>
+ <text x="459" y="595" font-family="Inter,Arial,sans-serif" font-weight="900" font-size="47" text-anchor="middle" fill="#f4f7f8" letter-spacing="3">EXISTING APRON</text>
+ <text x="459" y="627" font-family="Inter,Arial,sans-serif" font-size="16" text-anchor="middle" fill="#d7e0e4" letter-spacing="4">LOAD-BEARING ZONE</text>
+</g>
+<!-- Hangar 2 -->
+<g filter="url(#shadow)">
+ <path d="M188 88 H505 L535 310 H190Z" fill="url(#roof)" stroke="#68747c" stroke-width="5"/>
+ <path d="M214 110 H481 L503 286 H211Z" fill="none" stroke="#f6f8f9" stroke-opacity=".55" stroke-width="3"/>
+ <path d="M272 104 L270 294 M338 103 L337 300 M404 103 L405 302 M467 104 L477 303" stroke="#6d777d" stroke-opacity=".38" stroke-width="2"/>
+ <rect x="260" y="135" width="176" height="58" rx="9" fill="#dfe5e7" opacity=".8"/>
+ <text x="348" y="177" font-family="Inter,Arial,sans-serif" font-weight="950" font-size="42" text-anchor="middle" fill="#162c3b" letter-spacing="3">HANGAR 2</text>
+ <path d="M214 307 H514" stroke="#242e35" stroke-width="12"/>
+</g>
+<!-- Hangar 4 -->
+<g filter="url(#shadow)">
+ <path d="M761 84 H1082 L1116 314 H779Z" fill="url(#roof)" stroke="#68747c" stroke-width="5"/>
+ <path d="M787 108 H1057 L1081 289 H800Z" fill="none" stroke="#f6f8f9" stroke-opacity=".55" stroke-width="3"/>
+ <path d="M844 101 L857 298 M910 101 L923 302 M974 101 L989 303 M1036 102 L1052 304" stroke="#6d777d" stroke-opacity=".38" stroke-width="2"/>
+ <rect x="842" y="135" width="180" height="58" rx="9" fill="#dfe5e7" opacity=".8"/>
+ <text x="932" y="177" font-family="Inter,Arial,sans-serif" font-weight="950" font-size="42" text-anchor="middle" fill="#162c3b" letter-spacing="3">HANGAR 4</text>
+ <path d="M793 311 H1092" stroke="#242e35" stroke-width="12"/>
+</g>
+<!-- drainage corridor -->
+<g>
+ <path d="M587 31 C600 145 618 250 626 360 C638 489 647 615 670 868" fill="none" stroke="#0d4e75" stroke-width="78" opacity=".45"/>
+ <path d="M587 31 C600 145 618 250 626 360 C638 489 647 615 670 868" fill="none" stroke="url(#water)" stroke-width="55"/>
+ <path d="M587 31 C600 145 618 250 626 360 C638 489 647 615 670 868" fill="none" stroke="#9fe1f5" stroke-width="3" stroke-dasharray="30 18" opacity=".75"/>
+ <path d="M560 342 L657 335" stroke="#283d49" stroke-width="11" opacity=".9"/>
+ <path d="M574 338 L574 353 M590 337 L590 352 M606 336 L606 351 M622 335 L622 350 M638 334 L638 349" stroke="#b7c4ca" stroke-width="3"/>
+ <g transform="translate(644 382) rotate(83)"><rect x="0" y="0" width="132" height="31" rx="8" fill="#10293b" opacity=".9"/><text x="66" y="21" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="850" text-anchor="middle" fill="#bfeaff" letter-spacing="2">DRAINAGE</text></g>
+</g>
+<!-- habitat edge -->
+<g filter="url(#shadow)">
+ <path d="M760 578 Q785 548 827 550 H1110 Q1145 550 1145 587 V780 Q1145 817 1107 817 H808 Q764 817 748 782 Q730 735 741 664 Q744 614 760 578Z" fill="url(#habitat)" stroke="#9fb997" stroke-width="5"/>
+ <path d="M760 578 Q785 548 827 550 H1110 Q1145 550 1145 587 V780 Q1145 817 1107 817 H808 Q764 817 748 782 Q730 735 741 664 Q744 614 760 578Z" fill="url(#hatch)"/>
+ <path d="M760 578 Q785 548 827 550 H1110 Q1145 550 1145 587 V780 Q1145 817 1107 817 H808 Q764 817 748 782 Q730 735 741 664 Q744 614 760 578Z" fill="url(#grass)"/>
+ <text x="945" y="687" font-family="Inter,Arial,sans-serif" font-weight="950" font-size="43" text-anchor="middle" fill="#eef5e9" letter-spacing="3">HABITAT EDGE</text>
+ <text x="945" y="719" font-family="Inter,Arial,sans-serif" font-size="15" text-anchor="middle" fill="#c7dbc1" letter-spacing="3">SENSITIVE TRANSITION ZONE</text>
+</g>
+<!-- shrubs / edge texture -->
+<g fill="#2c5435" stroke="#a6bd8b" stroke-width="2" opacity=".95">
+ <circle cx="755" cy="570" r="15"/><circle cx="789" cy="548" r="12"/><circle cx="1125" cy="562" r="15"/><circle cx="1141" cy="620" r="13"/><circle cx="742" cy="742" r="14"/><circle cx="775" cy="808" r="12"/><circle cx="1126" cy="809" r="15"/>
+</g>
+<!-- gate -->
+<g filter="url(#shadow)">
+ <rect x="52" y="374" width="174" height="62" rx="14" fill="#071827" stroke="#7f9eb4" stroke-width="3"/>
+ <path d="M198 405 H240" stroke="#f7cd55" stroke-width="5"/><path d="M230 394 L244 405 L230 416" fill="none" stroke="#f7cd55" stroke-width="5"/>
+ <text x="132" y="412" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="900" text-anchor="middle" fill="#ffffff" letter-spacing="2">SERVICE GATE</text>
+</g>
+<!-- small industrial details -->
+<g fill="#4d5960" stroke="#c0c8cc" stroke-width="2" opacity=".9">
+ <rect x="210" y="340" width="45" height="25" rx="5"/><rect x="268" y="344" width="32" height="18" rx="4"/><rect x="1012" y="342" width="48" height="22" rx="4"/><rect x="1069" y="344" width="30" height="18" rx="4"/>
+</g>
+<g stroke="#f0c84a" stroke-width="5" opacity=".78"><path d="M278 360 l34 0"/><path d="M1019 366 l45 0"/><path d="M349 357 l68 0"/></g>
+<!-- compass -->
+<g transform="translate(105 720)" filter="url(#shadow)"><circle r="47" fill="#091b2a" stroke="#8ca8ba" stroke-width="2"/><path d="M0 -32 L10 3 L0 -5 L-10 3Z" fill="#ffca63"/><path d="M0 32 L8 6 L0 11 L-8 6Z" fill="#8096a4"/><text x="0" y="-52" font-family="Inter,Arial" font-weight="900" font-size="16" text-anchor="middle" fill="#fff">N</text></g>
+<!-- legend -->
+<g transform="translate(790 342)" filter="url(#shadow)">
+ <rect width="348" height="174" rx="18" fill="#071724" fill-opacity=".94" stroke="#8098aa" stroke-width="2"/>
+ <text x="20" y="31" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="950" fill="#fff" letter-spacing="3">SITE MAP</text>
+ <line x1="20" y1="43" x2="328" y2="43" stroke="#355065"/>
+ <rect x="20" y="57" width="34" height="14" rx="4" fill="#38aee0"/><text x="68" y="69" font-family="Inter,Arial" font-size="15" fill="#dce7ee">Blue = drainage</text>
+ <rect x="20" y="82" width="34" height="14" rx="4" fill="#46694c"/><path d="M20 96 L34 82 M31 96 L45 82 M42 96 L54 84" stroke="#9ac18d" stroke-width="3"/><text x="68" y="94" font-family="Inter,Arial" font-size="15" fill="#dce7ee">Pattern = habitat edge</text>
+ <rect x="20" y="107" width="34" height="14" rx="4" fill="#7d858a"/><text x="68" y="119" font-family="Inter,Arial" font-size="15" fill="#dce7ee">Grey = load-bearing area</text>
+ <rect x="20" y="132" width="34" height="14" rx="4" fill="none" stroke="#ffca63" stroke-width="4"/><text x="68" y="144" font-family="Inter,Arial" font-size="15" fill="#dce7ee">Amber = selected plan</text>
+</g>
+<!-- technical title strip -->
+<g transform="translate(33 828)"><rect width="1134" height="39" rx="0 0 20 20" fill="#071725" opacity=".94"/><text x="22" y="25" font-family="Inter,Arial" font-size="13" font-weight="850" fill="#9eb5c5" letter-spacing="2">BASE OPERATIONS · PHYSICAL FOOTPRINT PLANNING · TRAINING VIEW</text><text x="1110" y="25" text-anchor="end" font-family="Inter,Arial" font-size="12" fill="#ffcf68">REV 03</text></g>
+</svg>
