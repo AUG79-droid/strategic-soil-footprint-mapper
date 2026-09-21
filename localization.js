@@ -12,7 +12,26 @@
     ["Soil integrity","Integridad del suelo"],["Drainage integrity","Integridad del drenaje"],
     ["Habitat continuity","Continuidad del hábitat"],["Mission readiness","Disponibilidad de misión"],
     ["Scientific basis","Base científica"],["Open source","Abrir fuente"],
-    ["Selected","Seleccionado"],["Confirm","Confirmar"],["Continue","Continuar"]
+    ["Selected","Seleccionado"],["Confirm","Confirmar"],["Continue","Continuar"],
+    ["Final soil integrity:","Integridad final del suelo:"],
+    ["Final drainage integrity:","Integridad final del drenaje:"],
+    ["Final habitat continuity:","Continuidad final del hábitat:"],
+    ["Final readiness:","Disponibilidad final:"],
+    ["Accumulated audit risk:","Riesgo de auditoría acumulado:"],
+    ["Final audit score:","Puntuación final de auditoría:"],
+    ["Review traffic loading, vulnerable ground and restoration triggers.","Revisa las cargas de tráfico, el terreno vulnerable y los criterios de restauración."],
+    ["Controls limited cumulative compaction and new disturbed footprint.","Los controles limitaron la compactación acumulativa y la nueva superficie alterada."],
+    ["Inspect crossings, blocked flows, ponding and sediment pathways.","Inspecciona cruces, flujos bloqueados, encharcamientos y rutas de sedimentos."],
+    ["Flow paths remained largely protected and observable.","Las trayectorias de flujo permanecieron en gran medida protegidas y observables."],
+    ["Edge habitats and connecting strips require stronger no-go or footprint controls.","Los hábitats de borde y franjas de conexión requieren controles más estrictos de exclusión u ocupación."],
+    ["Operational plans generally avoided unnecessary habitat-edge disturbance.","Los planes operativos evitaron en general alteraciones innecesarias de los bordes de hábitat."],
+    ["Environmental planning must remain compatible with safe, timely operations.","La planificación ambiental debe seguir siendo compatible con operaciones seguras y dentro de plazo."],
+    ["High-risk choices indicate gaps in planning, operational control or evidence.","Las decisiones de alto riesgo indican brechas en planificación, control operacional o evidencias."],
+    ["The decision trail shows consistent preventive control.","El rastro de decisiones muestra un control preventivo consistente."],
+    ["Live operation ","Operación en curso "],
+    ["Objective:","Objetivo:"],
+    ["Select a plan to see its projected consequences.","Selecciona un plan para ver sus consecuencias previstas."],
+    ["Review the projected metric changes below.","Revisa abajo los cambios previstos en los indicadores."]
   ];
   function tr(v){
     if(lang!=="es"||!v)return v;
