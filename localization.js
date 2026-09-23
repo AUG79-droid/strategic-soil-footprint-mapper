@@ -6,6 +6,7 @@
   document.documentElement.lang=lang;
   const exact=new Map(window.SSF_ES||[]);
   const partial=[
+    ["Strategic Soil & Footprint Mapper","Mapa Estratégico de Suelo y Huella"],
     ["Back to Sustainability Hub","Volver al Sustainability Hub"],
     ["Back","Volver"],["Next mission","Siguiente misión"],["Home","Inicio"],
     ["Mission ","Misión "],["Theory","Teoría"],["Audit risk","Riesgo de auditoría"],
