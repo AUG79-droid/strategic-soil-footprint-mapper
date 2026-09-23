@@ -1,1 +1,6 @@
 .siteMock,.siteMap{background-image:url('assets/site-map-professional.svg');background-position:center;background-size:cover;background-repeat:no-repeat}
+
+html[lang="es"] .siteMock,html[lang="es"] .siteMap{background-image:url('assets/site-map-professional-es.svg')}
+html[lang="es"] .siteMock:after{content:"VISTA DE PLANIFICACIÓN EN DIRECTO"}
+html[lang="es"] .siteMap:after{content:"SUPERPOSICIÓN TÁCTICA DE HUELLA"}
+html[lang="es"] .mapPad:after{content:"HUELLA TEMPORAL"}
