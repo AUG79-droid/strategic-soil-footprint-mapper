@@ -57,6 +57,12 @@ window.SSF_ES.push(
 ["Decision area","Área de decisión"],
 ["preview","vista previa"],
 ["operational scenarios","escenarios operativos"],
+["Strategic Soil &","Mapa Estratégico de Suelo y"],
+["Footprint Mapper","Huella"],
+["SOIL","SUELO"],
+["DRAINAGE","DRENAJE"],
+["HABITAT","HÁBITAT"],
+["READINESS","DISPONIBILIDAD"],
 ["Choose one plan. You can change your selection before you press “Confirm plan”.","Elige un plan. Puedes cambiar tu selección antes de pulsar «Confirmar plan»."],
 ["This result is not just a score. Read the mechanism:","Este resultado no es solo una puntuación. Lee el mecanismo:"],
 ["Then open the theory checkpoint before moving on.","Después abre el bloque de teoría antes de continuar."]
