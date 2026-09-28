@@ -90,28 +90,10 @@
       walk(document.body);
     }
     addControl();
-    if(lang!=="es")return;
-    const target=document.getElementById("app")||document.body;
-    let queued=false;
-    const pending=new Set();
-    const flush=()=>{
-      queued=false;
-      const nodes=[...pending];
-      pending.clear();
-      nodes.forEach(walk);
-    };
-    const observer=new MutationObserver(ms=>{
-      for(const m of ms){
-        if(m.type==="characterData"&&m.target)pending.add(m.target);
-        for(const n of m.addedNodes)pending.add(n);
-      }
-      if(!queued){
-        queued=true;
-        queueMicrotask(flush);
-      }
-    });
-    observer.observe(target,{subtree:true,childList:true,characterData:true});
   }
+  window.localizeSubtree=walk;
+  window.translateText=tr;
+  window.SSF_LANG=lang;
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});
   else init();
 })();

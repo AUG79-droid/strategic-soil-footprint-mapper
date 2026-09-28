@@ -47,5 +47,17 @@ window.SSF_ES.push(
 ["This result is not just a score. Read the mechanism: ","Este resultado no es solo una puntuación. Lee el mecanismo: "],
 [" Then open the theory checkpoint before moving on."," Después abre el bloque de teoría antes de continuar."],
 ["Important:","Importante:"],
-["Return to simulation","Volver a la simulación"]
+["Return to simulation","Volver a la simulación"],
+["Aircraft hangars","Hangares de aeronaves"],
+["Operational apron","Plataforma operativa"],
+["Drainage flow","Flujo de drenaje"],
+["Habitat edge","Borde de hábitat"],
+["Vulnerable soil","Suelo vulnerable"],
+["Selected route","Ruta seleccionada"],
+["Decision area","Área de decisión"],
+["preview","vista previa"],
+["operational scenarios","escenarios operativos"],
+["Choose one plan. You can change your selection before you press “Confirm plan”.","Elige un plan. Puedes cambiar tu selección antes de pulsar «Confirmar plan»."],
+["This result is not just a score. Read the mechanism:","Este resultado no es solo una puntuación. Lee el mecanismo:"],
+["Then open the theory checkpoint before moving on.","Después abre el bloque de teoría antes de continuar."]
 );
