@@ -63,6 +63,7 @@ window.SSF_ES.push(
 ["DRAINAGE","DRENAJE"],
 ["HABITAT","HÁBITAT"],
 ["READINESS","DISPONIBILIDAD"],
+["Realistic aerial view of an operational airbase with hangars, apron, drainage, vulnerable soil and habitat edge","Vista aérea realista de una base operativa con hangares, plataforma, drenaje, suelo vulnerable y borde de hábitat"],
 ["Choose one plan. You can change your selection before you press “Confirm plan”.","Elige un plan. Puedes cambiar tu selección antes de pulsar «Confirmar plan»."],
 ["This result is not just a score. Read the mechanism:","Este resultado no es solo una puntuación. Lee el mecanismo:"],
 ["Then open the theory checkpoint before moving on.","Después abre el bloque de teoría antes de continuar."]
