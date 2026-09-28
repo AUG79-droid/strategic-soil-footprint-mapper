@@ -2,10 +2,11 @@
   "use strict";
   const requested=new URLSearchParams(location.search).get("hubLang")||new URLSearchParams(location.search).get("lang");
   const lang=requested==="en"?"en":"es";
+  const revision="20260928-2";
   document.documentElement.lang=lang;
   const load=src=>new Promise((resolve,reject)=>{
     const script=document.createElement("script");
-    script.src=src;
+    script.src=`${src}?v=${revision}`;
     script.onload=resolve;
     script.onerror=()=>reject(new Error(`Unable to load ${src}`));
     document.body.appendChild(script);
