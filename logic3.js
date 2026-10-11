@@ -5,5 +5,20 @@ document.getElementById('btnHome').onclick=()=>{if(confirm('Return to Home? Curr
 document.getElementById('btnBack').onclick=()=>{if(historyStack.length){Object.assign(state,historyStack.pop());render();window.scrollTo(0,0)}};
 document.getElementById('minBtn').onclick=()=>document.getElementById('avatarWrap').classList.add('min');
 document.getElementById('restoreBtn').onclick=()=>document.getElementById('avatarWrap').classList.remove('min');
-document.getElementById('speakBtn').onclick=()=>{if(!('speechSynthesis' in window))return;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(document.getElementById('avatarText').textContent);u.lang='en-GB';u.rate=.98;window.speechSynthesis.speak(u)};
+document.getElementById('speakBtn').onclick=()=>{
+  if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window))return;
+  const text=document.getElementById('avatarText').textContent?.trim();
+  if(!text)return;
+  window.speechSynthesis.cancel();
+  const spanish=window.SSF_AVATAR_LANG==='es';
+  const locale=spanish?'es-ES':'en-GB';
+  const utterance=new SpeechSynthesisUtterance(text);
+  utterance.lang=locale;
+  utterance.rate=.95;
+  const voices=window.speechSynthesis.getVoices();
+  const matchingVoice=voices.find(v=>v.lang.toLowerCase()===locale.toLowerCase())
+    ||voices.find(v=>v.lang.toLowerCase().startsWith(spanish?'es':'en'));
+  if(matchingVoice)utterance.voice=matchingVoice;
+  window.speechSynthesis.speak(utterance);
+};
 render();
