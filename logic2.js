@@ -1,6 +1,6 @@
 function theory(){
  const m=missions[state.mission],t=theoryData[m.theory];
- setAvatar(`${t.tip} This module is deliberately detailed. Work through the core theory, field signals and control cycle before unlocking the next mission.`);
+ setAvatar([t.tip,'This module is deliberately detailed. Work through the core theory, field signals and control cycle before unlocking the next mission.']);
  const sectionHtml=t.sections.map((s,i)=>`<article class="lesson"><div class="sectionLabel">Core theory ${i+1}</div><h3>${s.title}</h3>${s.body.map(p=>`<p>${p}</p>`).join('')}${s.bullets&&s.bullets.length?`<ul>${s.bullets.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}</article>`).join('');
  const ctrl=(label,arr)=>`<article class="controlCard"><h4>${label}</h4><ul>${arr.map(x=>`<li>${x}</li>`).join('')}</ul></article>`;
  app.innerHTML=`<section class="screen card theory">
